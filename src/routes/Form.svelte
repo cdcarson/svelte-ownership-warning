@@ -15,7 +15,7 @@
       name="name"
       id="name"
       bind:value={data.name}
-      onblur={() => (touched.name = true)}
-    />
+      onblur={() => (touched.name = true)} 
+    /> <!-- onblur triggers the warning -->
   </div>
 </form>
