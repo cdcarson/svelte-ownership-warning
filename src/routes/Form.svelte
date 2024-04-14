@@ -1,33 +1,21 @@
 <script lang="ts">
   let data = $state({
-    firstName: '',
-    lastName: ''
+    name: '',
   });
   let touched = $state({
-    firstName: false,
-    lastName: false
+    name: false,
   });
 </script>
 
 <form>
   <div>
-    <label for="firstName">First Name</label>
+    <label for="name">Name</label>
     <input
       type="text"
-      name="firstName"
-      id="firstName"
-      bind:value={data.firstName}
-      on:blur={() => (touched.firstName = true)}
-    />
-  </div>
-  <div>
-    <label for="lastName">Last Name</label>
-    <input
-      type="text"
-      name="lastName"
-      id="lastName"
-      bind:value={data.lastName}
-      on:blur={() => (touched.lastName = true)}
+      name="name"
+      id="name"
+      bind:value={data.name}
+      on:blur={() => (touched.name = true)}
     />
   </div>
 </form>
