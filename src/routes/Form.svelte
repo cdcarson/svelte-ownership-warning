@@ -15,7 +15,7 @@
       name="name"
       id="name"
       bind:value={data.name}
-      on:blur={() => (touched.name = true)}
+      onblur={() => (touched.name = true)}
     />
   </div>
 </form>
